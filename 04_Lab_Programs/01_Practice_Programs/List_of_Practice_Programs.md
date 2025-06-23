@@ -7,8 +7,6 @@ This repository contains a collection of beginner-friendly Practice Python progr
 - Time and Space Complexity  
 - Sample Input/Output  
 
----
-
 ## List of Programs
 
 | S.No | File Name                             | Title                                          | Description                                                                                   |
@@ -24,8 +22,6 @@ This repository contains a collection of beginner-friendly Practice Python progr
 | 9    | `09_Remove_Word_from_text.py`         | Remove a Word from a Text                      | Removes all occurrences of a specified word from a given string using `replace()`.            |
 | 10   | `10_Set_Operations.py`                | Set Operations in Python                       | Performs union, intersection, difference, and symmetric difference on two sets.               |
 | 11   | `11_Display_Calendar.py`              | Display Calendar of a Given Month and Year     | Displays a month’s calendar for a given year and month using Python’s `calendar` module.      |
-
----
 
 ## Usage
 
