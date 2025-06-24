@@ -50,29 +50,42 @@ Enter a word to be searched in paragraph: India
 The word "India" is found in the paragraph!
 """
 
+# Define the paragraph
 paragraph = '''New Delhi is the capital of India .
 Bangalore is the captial of Karnataka . Karnataka is in India .
 India is the largest democratic country in the world .'''
 
+# Display the paragraph
 print('Entered Paragraph: ' + paragraph)
 
+# Count total number of words using split()
 wordCount = len(paragraph.split())
 print("Total number of words in the paragraph: ", wordCount)
 
+# Initialize an empty dictionary to hold word frequencies
 counts = dict()
+
+# Split the paragraph into words
 words = paragraph.split()
 
+# Loop through each word and update its count in the dictionary
 for word in words:
     if word in counts:
         counts[word] = counts[word] + 1
     else:
         counts[word] = 1
-        
+
+# Display each word and its frequency
 for word in counts:
     print('Word - ' + word + ', Frequency - ' + str(counts[word]))
 
+# Ask user to enter a word to search
 searchWord = input('Enter a word to be searched in paragraph: ')
+
+# Use find() to check if the word exists in the paragraph
 result = paragraph.find(searchWord)
+
+# Display appropriate message based on result
 if result != -1:
     print('The word "' + searchWord + '" is found in the paragraph!')
 else:
